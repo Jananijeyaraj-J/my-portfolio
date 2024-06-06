@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/1df50126a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+<nav>
+    <img src="images/logo.png" class="logo">
+    <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+</nav>
+<div class="header-text">
+    <p>Full Stack Developer</p>
+    <h1>Hi Am <span>Janani</span><br>From India.</h1>
+</div>
+<!-- -------about------- -->
+<div class="about"></div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="para"> Am a Student of final year Btech.Enthusiastic and motivated Full Stack Developer with a solid foundation in the MERN
+                    (MongoDB, Express.js, React.js, Node.js) stack.Student of Information Technology, 
+                    eager to apply theoretical knowledge and practical skills to contribute effectively to dynamic 
+                    projects. Proficient in front-end and back-end development, with hands-on experience in building
+                    responsive web applications. A quick learner with a passion for staying updated with the latest
+                    technologies.Strong problem-solving abilities coupled with excellent communication skills, 
+                    ready to collaborate in a team environment to deliver high-quality solutions.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                        <p class="tab-links"onclick="opentab('Projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                        <li><span>Front-end</span><br>Html,Css,ReactJs,Java <Script></Script></li>
+                        <li><span>Back-end</span><br>NodeJs,ExpressJs,Python</li>
+                            <li><span>Database</span><br>MongoDB,SQL</li>
+                            </ul>
+                        </div>
+                    <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Full stack development</span><br>Internship at Webony for 1Month in 2024.</li>
+                                <li><span>Front-end Development</span><br>Internship At Webony for 1Month in 2023.</li>
+                                <li><span>Web Development</span><br>1Week Internship at Nandha Infotech.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>2024</span><br>Studying Btech Information Technology Final Year At CSI College Of Engineering.</li>
+                                    <li><span>2020</span><br>Completed MY 12 Grade.</li>
+                                    <li><span>2018</span><br>Completed My 10th Grade.</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="Projects">
+                                    <ul>
+                                        <li><span>Todo List</span><br>A Web application To Manage Your Todo Lists.</li>
+                                        <li><span>Portfolio Website</span><br>This is My Portfolio Website.</li>
+                                        <li><span>BookShelf</span><br>A Web application To Add and Delete BookDetails like Book Title Book
+                                            Author Name Book Descrption.</li>
+                                        </ul>
+                                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+<!-- -------------services--------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-end Development</h2>
+                <p>Dynamic Front End Developer skilled in HTML, CSS, and JavaScript, with expertise in modern 
+                    frameworks like React.js. Passionate about creating intuitive user interfaces and staying 
+                    updated on industry trends.</p>
+                    <a href="https://www.coursera.org/articles/front-end-developer">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Back-end Development</h2>
+                <p>Seasoned Back End Developer adept in creating efficient server-side applications with 
+                    expertise in languages like Python or NodeJs. Proficient in database management and committed 
+                    to optimizing performance and security.</p>
+                    <a href="https://www.coursera.org/articles/back-end-developer">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Full Stack Development</h2>
+                <p>Full Stack Developer proficient in front-end and back-end technologies, with expertise in 
+                    JavaScript, React.js, Node.js, and database management. Committed to building responsive and 
+                    scalable web applications.</p>
+                    <a href="https://www.coursera.org/articles/full-stack-developer">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Todo List</h3>
+                    <p>Streamlined To-Do List web app with intuitive task management, real-time updates, and secure 
+                        user authentication for enhanced productivity.</p>
+                     <a href=" https://jananijeyaraj-j.github.io/todolist-app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+                </div>
+        
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                <h3>BookShelf </h3>
+                <p>A Web application to add details of books and delete the details of books</p>
+                <a href=" https://jananijeyaraj-j.github.io/bookshelf/"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+           
+        </div>
+        </div>
+        <a href="images/see.png"class="btn">See More</a>
+    
+    </div>
+</div>
+<!-- -------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <div class="contact-right">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-at"></i>j.jananijeyaraj@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>8300936759</p>
+                    <div class="social-icons">
+                        
+                        <a href="https://www.instagram.com/janani_8624?igsh=MW03ZzlxbDJrNnJrZw==https://www.instagram.com/janani_8624?igsh=MW03ZzlxbDJrNnJrZw==https://www.instagram.com/janani_8624?igsh=MW03ZzlxbDJrNnJrZw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/janani-jeyaraj-102ba0309"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/janani resume-1.jpg"Download class="btn btn2"> Download Resume</a>
+                </div>
+                </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>     
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+
+                 
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright janani.Made with <i class="fa-solid fa-heart"></i> By HTML,CSS,JAVASCRIPT.</p>
+        </div>
+    </div>
+          <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }  
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");   
+             }
+        
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-300px";
+            }
+        </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx5VYUeXsADoYKSfLmss2VAQ4PIrr7XlwfELjr6X31NS6w_48MZnJi1Q881GCxezdF2Lw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById('msg')
+
+  form.addEventListener('submit', e=>{
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response  => {
+        msg.innerHTML= "message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        form.reset()
+      })
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+  </script>
+   
+  </body>
+</html>
